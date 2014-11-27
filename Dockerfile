@@ -42,9 +42,5 @@ RUN pyenv rehash
 RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> /root/.bash_profile
 RUN echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /etc/.bash_profile
 RUN echo 'eval "$(pyenv init -)"' >> /etc/.bash_profile
-### Install requirements ###
-COPY requirements.txt /root/requirements.txt
-RUN pip install -r /root/requirements.txt
-
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

@@ -2,7 +2,7 @@
 
 ### Install pyenv and two different Pythons in userspace
 
-**Self validated?** not yet ... have to figure out how
+**Self validated?** not automated yet: run `py.test test_svb.py` after build
 
 [Docker](https://www.docker.com/) provides lightweight containers not quite like virtual machines using [Linux container technology (LXC)](https://linuxcontainers.org).
 
