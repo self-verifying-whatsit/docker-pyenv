@@ -8,6 +8,8 @@
 
 [Pyenv](https://github.com/yyuu/pyenv) builds different Python versions in Userspace and makes them easily manageable in combination with virtualenvs.
 
+## TODO
+use [docker bindings](http://docker-py.readthedocs.org/en/latest/api/) to check result
 
 ## What is this?
 
