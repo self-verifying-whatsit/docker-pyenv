@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -i docker-pyenv:latest pyenv whence python
+docker run -t -a stdout -a stderr -i docker-pyenv:latest pyenv whence python
