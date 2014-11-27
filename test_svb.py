@@ -4,7 +4,7 @@ import subprocess
 
 def test_svb(capfd):
     here = os.path.dirname(__file__)
-    scriptPath = os.path.join(here, 'docker_check.sh')
+    scriptPath = os.path.join(here, 'check-docker-build.sh')
     process = subprocess.Popen(scriptPath)
     process.communicate()
     assert process.returncode == 0, process.returncode

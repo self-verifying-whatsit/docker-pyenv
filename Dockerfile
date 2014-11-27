@@ -1,15 +1,11 @@
 # see
 #   * https://docs.docker.com/articles/dockerfile_best-practices/
 #   * http://phusion.github.io/baseimage-docker
-#   * [Production] http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/
 
 # see https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 FROM phusion/baseimage:0.9.15
 MAINTAINER Oliver Bestwalter <oliver@bestwalter.de>
 
-ENV HOME /root
-RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
-CMD ["/sbin/my_init", "--enable-insecure-key"]
 
 # Python build dependencies
 RUN apt-get update
@@ -31,6 +27,7 @@ RUN apt-get install -y \
     git
 
 ### PYENV ###
+ENV HOME /root
 ENV PYENV_ROOT $HOME/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 # see https://github.com/yyuu/pyenv-installer
