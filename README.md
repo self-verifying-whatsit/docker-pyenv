@@ -10,6 +10,7 @@
 
 # Validate
 
+* cd into your clone of this project
 * pip install -r requirements.txt
 * ./svb-check.py
 
