@@ -4,6 +4,12 @@
 
 **Self validated?** not automated yet: run `py.test test_svb.py` after build
 
+## Build instructions
+
+* cd into your clone of this project
+* ./svb-build.sh
+
+
 [Docker](https://www.docker.com/) provides lightweight containers not quite like virtual machines using [Linux container technology (LXC)](https://linuxcontainers.org).
 
 [Pyenv](https://github.com/yyuu/pyenv) builds different Python versions in Userspace and makes them easily manageable in combination with virtualenvs.
