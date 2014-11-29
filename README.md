@@ -2,17 +2,16 @@
 
 ### Install pyenv and two different Pythons in userspace
 
-
 ## Build instructions
 
 * cd into your clone of this project
-* ./svb-build.sh
+* `./svb-build.sh`
 
-# Validate
+## Validate
 
 * cd into your clone of this project
-* pip install -r requirements.txt
-* ./svb-check.py
+* `pip install -r requirements.txt`
+* `./svb-check.py`
 
 [Docker](https://www.docker.com/) provides lightweight containers not quite like virtual machines using [Linux container technology (LXC)](https://linuxcontainers.org).
 
@@ -23,4 +22,4 @@ use [docker bindings](http://docker-py.readthedocs.org/en/latest/api/) to check 
 
 ## What is this?
 
-This repository is part of the Self Validating Blueprint (SVB) project as introduced in [this blogpost](https://self-validating-blueprint.github.io/introduction/).
+This repository is part of the Self Validating Blueprint (SVB) project as introduced in [here](https://self-validating-blueprint.github.io/introduction/).
