@@ -18,7 +18,7 @@ RUN apt-get install -y \
     libsqlite3-dev \
     libbz2-dev \
     libreadline6 \
-    libreadline6-dev
+    libreadline6-dev \
 # pyenv dependencies
     git
 
