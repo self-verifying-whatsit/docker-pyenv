@@ -13,7 +13,7 @@ if your user is in the `docker` group, you don't have to use sudo, otherwise you
 
 ## Validate
 
-** You might want to do this in a virtualenv. If you have virtualenvwrapper installed you can just type `mktmpenv` and you are in a throw away wirtualenv, that will be deleted when you call `deactivate`.**
+** You might want to do this in a virtualenv. If you have virtualenvwrapper installed you can just type `mktmpenv` and you are in a throw-away virtualenv, that will be deleted when you call `deactivate`.**
 
 * cd into your clone of this project
 * `pip install -r requirements.txt`
