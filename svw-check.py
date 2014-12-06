@@ -7,7 +7,7 @@ import pytest
 
 def test_svb(capfd):
     here = os.path.dirname(__file__)
-    scriptPath = os.path.join(here, 'svb-check-cmd.sh')
+    scriptPath = os.path.join(here, 'svw-check-cmd.sh')
     process = subprocess.Popen(scriptPath)
     process.communicate()
     out, err = capfd.readouterr()
