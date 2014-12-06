@@ -9,13 +9,15 @@ if your user is in the `docker` group, you don't have to use sudo, otherwise you
 ## Build instructions
 
 * cd into your clone of this project
-* `./svb-build.sh`
+* `./svw-build.sh`
 
 ## Validate
 
+** You might want to do this in a virtualenv. If you have virtualenvwrapper installed you can just type `mktmpenv` and you are in a throw away wirtualenv, that will be deleted when you call `deactivate`.**
+
 * cd into your clone of this project
 * `pip install -r requirements.txt`
-* `./svb-check.py`
+* `./svw-check.py`
 
 [Docker](https://www.docker.com/) provides lightweight containers not quite like virtual machines using [Linux container technology (LXC)](https://linuxcontainers.org).
 
