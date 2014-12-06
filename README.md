@@ -2,6 +2,10 @@
 
 ### Install pyenv and two different Pythons in userspace
 
+## To sudo or not to sudo
+
+if your user is in the `docker` group, you don't have to use sudo, otherwise you do.
+
 ## Build instructions
 
 * cd into your clone of this project
