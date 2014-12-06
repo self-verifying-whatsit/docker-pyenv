@@ -6,6 +6,8 @@
 FROM phusion/baseimage:0.9.15
 MAINTAINER Oliver Bestwalter <oliver@bestwalter.de>
 
+CMD ['/sbin/my_init']
+
 RUN apt-get update
 
 # Python build dependencies
@@ -35,9 +37,5 @@ RUN pyenv rehash
 RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> /root/.bash_profile
 RUN echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /etc/.bash_profile
 RUN echo 'eval "$(pyenv init -)"' >> /etc/.bash_profile
-
-# CMD sets the default command to run for this container
-# type `docker run -it docker-pyenv` to drop into the container shell
-CMD /bin/bash
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

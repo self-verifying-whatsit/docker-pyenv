@@ -23,6 +23,15 @@ if your user is in the `docker` group, you don't have to use sudo, otherwise you
 
 [Pyenv](https://github.com/yyuu/pyenv) builds different Python versions in Userspace and makes them easily manageable in combination with virtualenvs.
 
+## Drop into the Docker container
+
+Type 
+
+`docker run -it docker-pyenv /bin/bash` 
+
+to enter a shell inside the docker container
+
+
 ## TODO
 use [docker bindings](http://docker-py.readthedocs.org/en/latest/api/) to check result
 
