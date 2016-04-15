@@ -1,6 +1,6 @@
 # Docker-Pyenv
 
-### Install pyenv and two different Pythons in userspace
+**Install pyenv and two different Pythons in userspace**
 
 ## To sudo or not to sudo
 
@@ -30,11 +30,3 @@ Type
 `docker run -it docker-pyenv /bin/bash` 
 
 to enter a shell inside the docker container
-
-
-## TODO
-use [docker bindings](http://docker-py.readthedocs.org/en/latest/api/) to check result
-
-## What is this?
-
-This repository is part of the Self Validating Whatsit (SVW) project as introduced in [here](https://self-validating-whatsit.github.io/introduction/).
